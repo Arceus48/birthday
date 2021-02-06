@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>寻宝图</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="base_style.css">
+  <title>藏宝图</title>
 </head>
-<body>
+<body class="hero-image text-center">
 
 
-  <h2>欢迎来到这个奇妙的藏宝图！</h2>
-    <p>
+  <h2 class="title_head_2">欢迎来到这个奇妙的藏宝图！</h2>
+    <p class="paragraph">
         游戏规则：为了开启最后的庆祝大奖，需要娃先收集5个文字碎片，拼出最后的通关密语哦！<br>
-        碎片的收集：每个碎片都和某种食物或者饮料有关，一共有五个碎片。那么就需要娃回忆去年咱们俩吃过（喝过）的东西，选择出印象深刻的五种食物或饮料的名字哦！猜对名字并且完成简单的小问答即可获得一个碎片。
+        碎片的收集：每个碎片都和某种食物或者饮料有关，一共有五个碎片。那么就需要娃回忆去年咱们俩吃过（喝过）的东西，选择出印象深刻的五种食物或饮料的名字哦！猜对名字并且完成简单的小问答即可获得一个碎片。<br>
     </p>
     <!-- 锅包肉 葱油鸡 霸气芝士草莓 红丝绒 手枪腿 -->
-    <p>
+    <p class="hint">
       小提示：五个食物或者饮料的名字中，有四个是三个字的，有一个是六个字的。
     </p>
-    <p>
-        <input type="text" placeholder="食物或饮料的名字..." name="search" id="food">
-        <button type="button" onclick="myfunc()">提交</button></p>
-        
-    <p id="hint"></p>
 
-    <p>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="食物或饮料的名字..." aria-label="Recipient's username" aria-describedby="basic-addon2" name="search" id="food">
+      <div class="input-group-append">
+        <button type="button" class="btn btn-outline-primary" onclick="myfunc()">提交</button>
+      </div>
+    </div>
+        
+    <p id="hint" class="reply"></p>
+
+    <p class="paragraph">
         收集齐5个碎片后，按照一定顺序排列就可以拼出通关密语啦！
     </p>
 
-    <p>
-        <input type="text" placeholder="通关密语..." name="search" id="magic_word">
-        <button type="button" onclick="myfunc2()">提交</button></p>
-    <p id="password_hint"></p>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="通关密语..." name="search" id="magic_word" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button type="button" class="btn btn-outline-primary" onclick="myfunc2()">提交</button></p>
+      </div>
+    </div>
+
+    <p id="password_hint" class="reply"></p>
 <!-- <p id="demo"></p> -->
 
 <script>

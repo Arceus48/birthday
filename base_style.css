@@ -6,7 +6,7 @@ body, html {
 
 .hero-image {
   margin:auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/cloudy_apple.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,4 +50,34 @@ body, html {
 }
 .navbar-default  navbar-brand {
     color: rgba(0, 0, 0, 0.5);
+}
+
+.title_head_2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.input-group {
+    position: relative;
+    margin: auto;
+    width: 30%;
+}
+
+.paragraph {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.hint {
+    max-width: 40%;
+    margin: auto;
+    color: rgb(255, 150, 52);
+}
+
+.reply {
+    max-width: 40%;
+    margin: auto;
+    color: rgb(63, 152, 253);
 }
