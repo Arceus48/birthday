@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>手枪腿</title>
+</head>
+<body>
+
+<h1>手枪腿</h1>
+<p>出这个选择题的时候，我在想，我对这玩意的了解真不如娃。。问点啥呢。。有了！</p>
+<p>我们旅游的时候在哪里吃过德克士？请选择最符合要求的选项。</p>
+<ol type="A">
+    <li>杭州</li>
+    <li>重庆</li>
+    <li>九寨沟</li>
+    <li>成都</li>
+</ol>
+<p><input type="text" id="answer" placeholder="你的答案...">
+<button type="button" onclick="myfunc()">提交</button></p>
+
+<p id="demo"></p>
+
+<a href="../index_plain.html"><button type="button">返回</button></a>
+<script>
+    function myfunc(){
+        var string = document.getElementById("answer").value
+        if (string == "C"){
+            document.getElementById("demo").innerHTML = "恭喜你答对啦！碎片是：娃"
+        } else {
+            document.getElementById("demo").innerHTML = "不对哦~再试一次吧！"
+        }
+    }
+</script>
+
+</body>
+</html>

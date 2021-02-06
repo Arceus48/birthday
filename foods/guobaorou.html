@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>锅包肉</title>
+</head>
+<body>
+
+<h1>锅包肉</h1>
+<p>老江南春的锅包肉多少钱？同时祝愿娃早日吃上锅包肉！</p>
+<ol type="A">
+    <li>38</li>
+    <li>48</li>
+    <li>58</li>
+</ol>
+<p><input type="text" id="answer" placeholder="你的答案...">
+<button type="button" onclick="myfunc()">提交</button></p>
+
+<p id="demo"></p>
+
+<a href="../index_plain.html"><button type="button">返回</button></a>
+<script>
+    function myfunc(){
+        var string = document.getElementById("answer").value
+        if (string == "B"){
+            document.getElementById("demo").innerHTML = "恭喜你答对啦！碎片是：蠢"
+        } else {
+            document.getElementById("demo").innerHTML = "不对哦~再试一次吧！"
+        }
+    }
+</script>
+
+</body>
+</html>

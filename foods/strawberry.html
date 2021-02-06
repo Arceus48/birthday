@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>霸气芝士草莓</title>
+</head>
+<body>
+
+<h1>霸气芝士草莓</h1>
+<p>6个字的实在是太容易想了。哼~出的是不是简单了点啊哈哈哈</p>
+<p>咱们在哪家店没喝过霸气芝士草莓？</p>
+<ol type="A">
+    <li>万象城</li>
+    <li>西城红场</li>
+    <li>红博中央公园</li>
+</ol>
+<p><input type="text" id="answer" placeholder="你的答案...">
+<button type="button" onclick="myfunc()">提交</button></p>
+
+<p id="demo"></p>
+
+<a href="../index_plain.html"><button type="button">返回</button></a>
+<script>
+    function myfunc(){
+        var string = document.getElementById("answer").value
+        if (string == "C"){
+            document.getElementById("demo").innerHTML = "恭喜你答对啦！碎片是：爱"
+        } else {
+            document.getElementById("demo").innerHTML = "不对哦~再试一次吧！"
+        }
+    }
+</script>
+
+</body>
+</html>

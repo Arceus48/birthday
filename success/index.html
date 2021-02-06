@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>抽取生日礼物！</title>
+</head>
+<body>
+
+<h1>写下三个想要的生日礼物吧~</h1>
+<p>然后我会从这三个中随机选择一个哦！</p>
+<p>心愿列表</p>
+<ol type="A">
+    <li>第一个：<input type="text" placeholder="" name="search" id="1"></li>
+    <li>第二个：<input type="text" placeholder="" name="search" id="2"></li>
+    <li>第三个：<input type="text" placeholder="" name="search" id="3"></li>
+</ol>
+<p>写好了就提交哦~<button type="button" onclick="myfunc()">提交</button></p>
+
+<p id="result"></p>
+
+<p id="explanation"></p>
+
+<script>
+    function myfunc(){
+        document.getElementById("result").innerHTML = "抽中的愿望就是：" + document.getElementById("1").value + "！"
+        document.getElementById("explanation").innerHTML = "解释一下：其实不是随机的哈哈哈。娃子第一个写的应该是最想实现的，所以就是第一个啦~"
+    }
+</script>
+
+</body>
+</html>
