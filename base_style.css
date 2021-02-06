@@ -53,27 +53,29 @@ body, html {
 }
 
 .title_head_2 {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .input-group {
     position: relative;
     margin: auto;
-    width: 30%;
+    width: 60%;
 }
 
 .paragraph {
     max-width: 80%;
     margin: auto;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .hint {
-    max-width: 40%;
+    max-width: 60%;
     margin: auto;
     color: rgb(255, 150, 52);
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .reply {
