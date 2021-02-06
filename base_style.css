@@ -61,6 +61,7 @@ body, html {
     position: relative;
     margin: auto;
     width: 60%;
+    margin-top: 3%;
 }
 
 .paragraph {
@@ -82,4 +83,11 @@ body, html {
     max-width: 40%;
     margin: auto;
     color: rgb(63, 152, 253);
+    margin-bottom: 3%;
+}
+
+.list-group {
+    max-width: 40%;
+    margin: auto;
+    opacity: 0.7;
 }
