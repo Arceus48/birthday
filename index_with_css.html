@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="base_style.css">
+</head>
+<body>
+
+
+<div class="hero-image">
+  <h2 style="margin:auto">欢迎来到这个奇妙的藏宝图！</h2>
+  <div class="hero-text">
+    <p>
+        游戏规则：为了开启最后的庆祝大奖，需要娃先收集5个文字碎片，拼出最后的通关密语哦！<br>
+        碎片的收集：每个碎片都和某种食物或者饮料有关，一共有五个碎片。那么就需要娃回忆这几年的人生，选择出印象深刻的五种食物或饮料的名字哦！猜对名字并且完成简单的小问答即可获得一个碎片。
+    </p>
+  </div>
+  <div class="hero-text">
+    <p style="margin-top:10%;margin-left:30%;margin-right: 0%">
+        <input type="text" placeholder="食物或饮料的名字..." name="search" id="food">
+        <button type="submit" onclick="myfunc()"><i class="fa fa-search"></i></button></p>
+  </div>
+<!-- 
+  <div class="hero-text">
+    <p  style="margin-top:35%">
+        收集齐5个碎片后，按照一定顺序排列就可以拼出通关密语啦！
+    </p>
+  </div>
+
+  <div class="hero-text">
+    <p style="margin-top:40%;margin-left:30%;margin-right: 0%">
+        <input type="text" placeholder="通关密语..." name="search" id="magic_word">
+        <button type="submit" onclick="myfunc2()"><i class="fa fa-search"></i></button></p>
+  </div> -->
+</div>
+
+<!-- <p id="demo"></p> -->
+
+<script>
+  function myfunc() {
+    // document.getElementById("demo").innerHTML = document.getElementById("food").value
+    // window.location.href="lala.html";
+    var string = document.getElementById("food").value
+    if (string == "锅包肉"){
+      window.location.href="guobaorou/index.html";
+    } else {
+      document.getElementById("demo").innerHTML = "False"
+    }
+  }
+  function myfunc2() {
+    // document.getElementById("demo").innerHTML = document.getElementById("food").value
+    // window.location.href="lala.html";
+    var string = document.getElementById("majic_word").value
+    if (string == "蠢仔爱傻娃"){
+      window.location.href="guobaorou/index.html";
+    } else {
+      document.getElementById("demo").innerHTML = "False"
+    }
+  }
+  </script>
+</body>
+</html>
