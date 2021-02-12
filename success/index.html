@@ -23,9 +23,19 @@
 <p id="explanation" class="paragraph"></p>
 
 <script>
+    var count = 0;
+    var wish = "";
     function myfunc(){
-        document.getElementById("result").innerHTML = "抽中的愿望就是：" + document.getElementById("1").value + "！"
-        document.getElementById("explanation").innerHTML = "其实不是随机选的哈哈哈。娃子第一个写的应该是最想实现的，所以就实现第一个啦~"
+        count++;
+        if (count == 1) {
+            wish = document.getElementById("1").value
+            document.getElementById("result").innerHTML = "抽中的愿望就是：" + wish + "！"
+            document.getElementById("explanation").innerHTML = "其实不是随机选的哈哈哈。娃子第一个写的应该是最想实现的，所以就为娃子实现第一个啦~具体怎么实现呢？把这个截图给我就好啦！"
+        } else {
+            document.getElementById("result").innerHTML = "抽中的愿望还是：" + wish + "！"
+            document.getElementById("explanation").innerHTML = "既然写好了就别换愿望了哦！心诚则灵！"
+        }
+
     }
 </script>
 
