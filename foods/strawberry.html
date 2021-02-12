@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../base_style.css">
     <title>霸气芝士草莓</title>
 </head>
-<body>
+<body class="strawberry-image  text-center">
 
-<h1>霸气芝士草莓</h1>
-<p>6个字的实在是太容易想了。哼~出的是不是简单了点啊哈哈哈</p>
-<p>咱们在哪家店没喝过霸气芝士草莓？</p>
-<ol type="A">
-    <li>万象城</li>
-    <li>西城红场</li>
-    <li>红博中央公园</li>
+<h2 class="title_head_2 white-text">霸气芝士草莓</h2>
+<p class="white-text">6个字的实在是太容易想了。哼~出的是不是简单了点啊哈哈哈</p>
+<p class="white-text">咱们在哪家店没喝过霸气芝士草莓？</p>
+<ol type="A" class="list-group list-group-more">
+    <li class="list-group-item">A. 万象城</li>
+    <li class="list-group-item">B. 西城红场</li>
+    <li class="list-group-item">C. 红博中央公园</li>
 </ol>
-<p><input type="text" id="answer" placeholder="你的答案...">
-<button type="button" onclick="myfunc()">提交</button></p>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" id="answer" placeholder="你的答案..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button type="button" class="btn btn-primary" onclick="myfunc()">提交</button>
+    </div>
+  </div>
 
-<p id="demo"></p>
+<p id="demo" class="reply"></p>
 
-<a href="../index.html"><button type="button">返回</button></a>
+<a href="../index.html"><button type="button" class="btn btn-info">返回</button></a>
 <script>
     function myfunc(){
         var string = document.getElementById("answer").value

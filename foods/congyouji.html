@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../base_style.css">
     <title>葱油鸡</title>
 </head>
-<body>
+<body class="ji-image  text-center">
 
-<h1>葱油鸡</h1>
-<p>emm能告诉我怎么想到这个的不？</p>
-<p>吃完葱油鸡咱们去哪儿了？</p>
-<ol type="A">
-    <li>江边</li>
-    <li>哈西</li>
-    <li>江北</li>
+<h2 class="title_head_2 white-text">葱油鸡</h2>
+<p class="white-text">emm能告诉我怎么想到这个的不？</p>
+<p class="white-text">吃完葱油鸡咱们去哪儿了？</p>
+<ol type="A" class="list-group list-group-more">
+    <li class="list-group-item">A. 江边</li>
+    <li class="list-group-item">B. 哈西</li>
+    <li class="list-group-item">C. 江北</li>
 </ol>
-<p><input type="text" id="answer" placeholder="你的答案...">
-<button type="button" onclick="myfunc()">提交</button></p>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" id="answer" placeholder="你的答案..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button type="button" class="btn btn-primary" onclick="myfunc()">提交</button>
+    </div>
+  </div>
 
-<p id="demo"></p>
+<p id="demo" class="reply"></p>
 
-<a href="../index.html"><button type="button">返回</button></a>
+<a href="../index.html"><button type="button" class="btn btn-info">返回</button></a>
 <script>
     function myfunc(){
         var string = document.getElementById("answer").value
