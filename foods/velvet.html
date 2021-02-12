@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../base_style.css">
     <title>红丝绒</title>
 </head>
-<body>
+<body class="velvet-image  text-center">
 
-<h1>红丝绒</h1>
-<p>厉害呀，这个也能想到！</p>
-<p>6寸红丝绒蛋糕的直径是多大？</p>
-<ol type="A">
-    <li>11cm</li>
-    <li>13cm</li>
-    <li>15cm</li>
-    <li>17cm</li>
+<h2 class="title_head_2 white-text">红丝绒</h2>
+<p class="white-text">厉害呀，这个也能想到！</p>
+<p class="white-text">6寸红丝绒蛋糕的直径是多大？</p>
+<ol type="A" class="list-group list-group-more white-text">
+    <li class="list-group-item black-text">A. 11cm</li>
+    <li class="list-group-item black-text">B. 13cm</li>
+    <li class="list-group-item black-text">C. 15cm</li>
+    <li class="list-group-item black-text">D. 17cm</li>
 </ol>
-<p><input type="text" id="answer" placeholder="你的答案...">
-<button type="button" onclick="myfunc()">提交</button></p>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" id="answer" placeholder="你的答案..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button type="button" class="btn btn-outline-primary" onclick="myfunc()">提交</button>
+    </div>
+  </div>
 
-<p id="demo"></p>
+<p id="demo" class="reply"></p>
 
-<a href="../index.html"><button type="button">返回</button></a>
+<a href="../index.html"><button type="button" class="btn btn-outline-info">返回</button></a>
 <script>
     function myfunc(){
         var string = document.getElementById("answer").value
